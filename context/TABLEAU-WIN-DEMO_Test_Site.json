@@ -1,0 +1,30 @@
+{
+    "context-variables": {
+        "TABLEAU_URL": "https://ip-172-31-71-81.ec2.internal",
+        "TABLEAU_USER": "Roland",
+        "TABLEAU_VERSION": "2023.3",
+        "TABLEAU_SITE": "Test",
+        "AUTHENTICATION_METHOD": "Password",
+        "PERSONAL_ACCESS_TOKEN": "",
+        "PERSONAL_ACCESS_TOKEN_NAME": "",
+        "ENCRYPTED_VARIABLES_LIST": [
+            "gcp_user",
+            "gcp_password",
+            "gcp_jdbc_url",
+            "gcp_service_account",
+            "postgres_user",
+            "postgres_password",
+            "postgres_jdbc_url"
+        ],
+        "TABLEAU_PWD": "e7d849a3f781940589fc1e88ad23254c;SJyDm6MPnj0=;encrypted",
+        "gcp_user": "331899629eb44ec2f6f7d26d7fbb73e5;NL4gl5NQruOK7kyHUPWtFMFVbUfsSQ==;encrypted",
+        "gcp_password": "0efc0da30b0ddfecb512d0397057af07;g27Q7FDq7xdTzcA=;encrypted",
+        "gcp_jdbc_url": "e659182053f55ecd347d9088a7b33e52;+VoFentRPJQrnh/E5pViilL4Cp9AZCybPfqYF2raUpBXNtZLyaVoKNaRVQiC4ss4U4WI7IVHC4vbqfk4qHQBOpLeao9mOV905nQQgqQcc0PYrA/cpDMe06a0zbIoC24mbsinrR6UwQ==;encrypted",
+        "gcp_service_account": "9e029c6d3758b334255fbac3415aa2fd;QdgL+QeBXLaxHlUcf2cscWfV2Ga2z++Hkexg0Zb5N/8fOv2jLw30Vsy1SeESheg/sENl716W22wcy6GgQw==;encrypted",
+        "postgres_user": "2a0b1bf690d423e02b2eb8e0dab8f00e;YRMIghKpARk=;encrypted",
+        "postgres_password": "f5e6f7ad0e70f943cdecb934361ec64c;6yOQ2jsPCwxmYGFiTA==;encrypted",
+        "postgres_jdbc_url": "d173702c438ee800a1958f88d1d4aff3;pmdbO/ukNcxCYVZ8oRJvZlP32n1V8SOCVRTHdzP2ML+f9kgwGMj/gn2cjvc+cg==;encrypted",
+        "region_filter_1": "'West'",
+        "region_filter_2": "'East'"
+    }
+}

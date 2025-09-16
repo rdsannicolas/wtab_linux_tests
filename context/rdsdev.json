@@ -1,0 +1,31 @@
+{
+    "context-variables": {
+        "TABLEAU_URL": "https://10ax.online.tableau.com",
+        "TABLEAU_USER": "roland.sannicolas@wiiisdom.com",
+        "TABLEAU_SITE": "rdsdev",
+        "AUTHENTICATION_METHOD": "Connected App",
+        "CONNECTED_APP_ID": "05ea32b52df48caaab4269f3ad6f215c;9f53Jz5oQhItW1esotjj6AzR7lj+wxhhrqE0qRTVAyGcqmFB;encrypted",
+        "CONNECTED_APP_SECRET": "f4eb57631289483a752fd4e07a89e435;prJROIZvRu+x8H7EUb1GrsM+Vc4V6mYCZPL9+9bMUh4WzQf7;encrypted",
+        "SECRET_VALUE": "ccf1f48b8a8634c6638c26c259c29ec1;E3kAZjvvKfp0Jbb2SyKTnIrfOCkq/tRM8GtG5/GDU8UA1Cs9UukBpHPomS0=;encrypted",
+        "PERSONAL_ACCESS_TOKEN": "9422b3a3438e3a54d17267ea6f42bbe1;eC8ftKJQUFWB2K137g6Htlpncmlx1E+lQEWpBYmMt4ig5SKX0IebfSWjX0MOyfnkGFJk7Nn/wtTd;encrypted",
+        "PERSONAL_ACCESS_TOKEN_NAME": "roland_pat_rdsdev",
+        "gcp_user": "61b61e26db30fa476859089140d1eb5a;Wvpalx9NwVPrQr7Y5zs060PrJmrRbA==;encrypted",
+        "ENCRYPTED_VARIABLES_LIST": [
+            "gcp_user",
+            "gcp_password",
+            "gcp_jdbc_url",
+            "gcp_service_account",
+            "postgres_user",
+            "postgres_password",
+            "postgres_jdbc_url"
+        ],
+        "gcp_password": "2defecce8036c7ab7d14202fcd97cdc3;2K1LtAd+AWlaR8k=;encrypted",
+        "gcp_jdbc_url": "f615fb2087f6c58abbfabc0b46e51698;rdNAHZPDkhFFQ+7hJ96R/tdX11DSw5yZWci+q0yHyzxdlG+zFKVn3cF+JUARmav2AQvI12xUu+l6F89PRw4fmWQ51wR+pE2U+TW4ifyCz9E/h5JrCSD8GOHrZy8/HKXgX1VrkUdJzg==;encrypted",
+        "gcp_service_account": "856099f67e4c2b7a4e9ee200b3debf80;Zf5xeRmxaOIuSm/w7pF++8GkM0kotRj2zhv8NLJaU8F+0m/jHQ/G400dk9UIBQTryi5An4x/pAlkC046Vw==;encrypted",
+        "postgres_user": "71e9c0c08fcf35ae6395c07c2aefb6aa;OlvldQnGJSs=;encrypted",
+        "postgres_password": "10a56bea7ee6d83f91d279f22b65b336;/Z+FyWDByKv9FLE/1w==;encrypted",
+        "postgres_jdbc_url": "59de3e9e55ec7719674c902709f5c942;bcuBFHKJa69Fy8t4mcTVK33Bk9kEK1yyLPbcUMNtqDmRsSeUSs3vhzjV5MqsqA==;encrypted",
+        "region_filter_1": "'West'",
+        "region_filter_2": "'East'"
+    }
+}
