@@ -16,6 +16,51 @@
                 "enabled": false,
                 "message": "*TEST FAILED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nMessage: *|OUTPUT_MESSAGE|*\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
             }
+        },
+        {
+            "type": "database",
+            "enabled": true,
+            "jdbcURL": "jdbc:postgresql://localhost:5432/wiiisdom_linux",
+            "password": "8095c1e15e1780fe655f84a32472a5fa;cbLfsDqPy3aaa7bByOJ0tSmh2Tvw;encrypted",
+            "user": "{{postgres_user}}"
+        },
+        {
+            "type": "webhook",
+            "enabled": false,
+            "webhookUrl": "https://<YOUR_WEBHOOK_URL>",
+            "onStart": {
+                "enabled": false
+            },
+            "onSuccess": {
+                "enabled": false
+            },
+            "onFailure": {
+                "enabled": false
+            }
+        },
+        {
+            "type": "email",
+            "enabled": false,
+            "smtpHost": "smtp.gmail.com",
+            "smtpPort": 587,
+            "secure": false,
+            "securityMethod": "TLS",
+            "useAuth": true,
+            "user": "yourname@company.org",
+            "from": "yourname@company.org",
+            "to": "other@company.org",
+            "onStart": {
+                "enabled": false,
+                "message": "<h2>TEST STARTED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br />"
+            },
+            "onSuccess": {
+                "enabled": false,
+                "message": "<h2>TEST SUCCESS</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            },
+            "onFailure": {
+                "enabled": false,
+                "message": "<h2>TEST FAILED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Message:</strong> *|OUTPUT_MESSAGE|*<br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            }
         }
     ]
 }
