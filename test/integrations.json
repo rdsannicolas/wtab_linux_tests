@@ -1,0 +1,21 @@
+{
+    "integrations": [
+        {
+            "type": "slack",
+            "enabled": false,
+            "webhookUrl": "__YOUR_WEBHOOK_URL__",
+            "onStart": {
+                "enabled": false,
+                "message": "*TEST STARTED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)"
+            },
+            "onSuccess": {
+                "enabled": false,
+                "message": "*TEST SUCCESS*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
+            },
+            "onFailure": {
+                "enabled": false,
+                "message": "*TEST FAILED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nMessage: *|OUTPUT_MESSAGE|*\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
+            }
+        }
+    ]
+}

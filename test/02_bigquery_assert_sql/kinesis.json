@@ -1,0 +1,41 @@
+{
+    "type": "functional",
+    "name": "02_bigquery_assert_sql",
+    "description": "",
+    "tasks": [
+        {
+            "type": "viz_open",
+            "disabled": false,
+            "name": "Open Viz",
+            "url": "[\"{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/wtab_bq_superstore_na_17574487819480/ExecutiveOverview\"]"
+        },
+        {
+            "type": "assert_sql_equals",
+            "name": "Assert SQL Equals",
+            "disabled": false,
+            "data-type": "SUMMARY",
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "max-rows": 2000,
+                "jdbcURL-generated": true,
+                "allow-multiple-queries": true,
+                "jdbc-url": "{{gcp_jdbc_url}}",
+                "user": "",
+                "password": ""
+            },
+            "truncate-decimal-places": -1,
+            "comparison-mode": "formatted_values",
+            "target": "Profit Ratio by Geography",
+            "columns": [
+                "State",
+                "AGG(Profit Ratio)"
+            ],
+            "sql": "SELECT \n  state,\n  FORMAT(\"%.1f%%\", ROUND(SUM(profit) / SUM(sales) * 100, 1)) AS profit_margin\nFROM `bigquerypublic-458722.bq_superstore_na.orders`\nWHERE\n  country = 'United States'\nGROUP BY\n  state;"
+        }
+    ],
+    "tableau-snapshot": {}
+}

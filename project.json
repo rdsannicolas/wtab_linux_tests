@@ -1,9 +1,9 @@
 {
-    "kinesisVersion": "2025.3",
+    "kinesisVersion": "2025.4",
     "name": "linux_tests",
     "description": "",
     "srcDir": "src",
     "jobDir": "test",
     "contextDir": "context",
-    "activeContextGroupKey": "wiiisdomdemo.json"
+    "activeContextGroupKey": "rdsdev.json"
 }
